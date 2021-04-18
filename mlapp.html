@@ -9,9 +9,9 @@
     
     
 </head>
-<body style=" background-color: whitesmoke; color:black;width: 100vw">
+<body style=" background-color: whitesmoke; color:black;" >
     
-        <nav class="navbar navbar-expand-lg navbar-light bg-info" >
+        <nav class="navbar navbar-expand-lg navbar-light bg-info"  >
             <a class="navbar-brand" href="./"><strong>ML APP</strong></a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
@@ -27,36 +27,47 @@
                 </ul>
             </div>   
         </nav>
-    
+
+    <br/>
+    <br/>
     <div class="row">            
         <div class="col-2"></div>
-        <div class="col-3" style="align-content: center; ">            
-
-            <label style="margin-top:25px;">Dense Layer </label>
-            <button type="button" class="btn btn-danger" style="border-radius : 50%; margin : 10" id="densebutton">+</button>
-            <div id="dense"></div>
-
-        </div>
-        <div class="col-3">            
-                   
-                <br/>
-                Optimizer:<br/>
+        
+        <div class="col-2" style="border: 1px solid black;  padding: 20px;">
+            <label >Dense Layer</label>
+            <button type="button" class="btn btn-danger" style="border-radius : 50%; margin-left:30px" id="densebutton">+</button>
+            <br/></br>
+            <label>Input Size:</label>
+            <input type="text" class='form-control'> 
+            <br/>
+            <label>Output Size:</label>
+            <input type="text" class='form-control'> 
+            <br/>
+            
+            Optimizer:<br/>
                 <select class="form-select" aria-label="Default select example">
-                <option selected>Optimizer</option>
+                <option selected>Select</option>
                 <option value="1">SGD</option>
                 <option value="2">Adam</option>
                 <option value="3">RMSProp</option>
                 </select>
                 
-                <br/>
-                Loss Function:<br/>
+            <br/>
+            Loss Function:<br/>
                 <select class="form-select" aria-label="Default select example">
                 <option selected>Select</option>
                 <option value="1">MSE</option>
                 <option value="2">Binary Cross Entropy</option>
                 <option value="3">Categorical Cross Entropy</option>
                 </select> 
-         </div>
+        </div>
+       
+        <div class="col-2">
+            <div id="dense"></div>
+        </div>
+        
+        <div class="col-6"></div>
+       
  
     </div>
     
